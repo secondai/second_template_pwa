@@ -17,6 +17,8 @@ WORKDIR $DBUILDER_WORKDIR
 COPY . .
 
 RUN echo "TESTING NEW SECOND BUILD2"
+RUN pwd
+RUN ls -al 
 RUN ls -al /usr/src
 RUN ls -al /usr/src/attached-volume
 RUN ls -al /usr/src/attached-volume/app.second.sample_pwa
