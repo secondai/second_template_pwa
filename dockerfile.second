@@ -8,7 +8,7 @@ RUN apk update
 RUN apk --no-cache add bash python make g++
 
 #RUN npm install -g http-server 
-#WORKDIR /
+WORKDIR ${DBUILDER_WORKDIR}
 
 # install dependencies? 
 
