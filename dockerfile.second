@@ -14,6 +14,6 @@ WORKDIR $DBUILDER_WORKDIR
 # - TODO 
 
 RUN echo "TESTING NEW SECOND BUILD2"
-RUN ls -al /usr
+RUN ls -al /usr/src
 
 CMD [ "npm", "run", "second:build" ]
