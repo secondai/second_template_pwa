@@ -13,6 +13,9 @@ WORKDIR $DBUILDER_WORKDIR
 # install dependencies? 
 # - TODO 
 
+# dunno, shot in the dark
+COPY . .
+
 RUN echo "TESTING NEW SECOND BUILD2"
 RUN ls -al /usr/src
 RUN ls -al /usr/src/attached-volume
