@@ -13,5 +13,6 @@ RUN apk --no-cache add bash python make g++
 # install dependencies? 
 
 RUN echo "TESTING NEW SECOND BUILD"
+RUN ls -al
 
 CMD [ "npm", "run", "second:build" ]
