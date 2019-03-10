@@ -15,5 +15,7 @@ WORKDIR $DBUILDER_WORKDIR
 
 RUN echo "TESTING NEW SECOND BUILD2"
 RUN ls -al /usr/src
+RUN ls -al /usr/src/attached-volume
+RUN ls -al /usr/src/attached-volume/app.second.sample_pwa
 
 CMD [ "npm", "run", "second:build" ]
