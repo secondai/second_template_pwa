@@ -7,8 +7,15 @@ ENV NODE_ENV=${NODE_ENV}
 RUN apk update
 RUN apk --no-cache add bash python make g++
 
+
+RUN echo "WORKDIR: ${DBUILDER_WORKDIR}"
+RUN ls -al
+
 #RUN npm install -g http-server 
 WORKDIR ${DBUILDER_WORKDIR}
+
+RUN echo -n "CURRENT DIRECTORY:"
+RUN pwd
 
 # install dependencies? 
 
