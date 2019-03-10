@@ -1,4 +1,3 @@
-# The instructions for the first stage
 FROM node:10-alpine
 
 ARG NODE_ENV=development
@@ -9,22 +8,12 @@ RUN apk --no-cache add bash python make g++
 
 ARG DBUILDER_WORKDIR
 
-RUN echo "WORKDIR"
-RUN echo ${DBUILDER_WORKDIR}
-RUN echo ${DBUILDER_WORKDIR2}
-RUN echo $DBUILDER_WORKDIR
-RUN echo $DBUILDER_WORKDIR2
-RUN ls -al
-
-#RUN npm install -g http-server 
 WORKDIR $DBUILDER_WORKDIR
 
-RUN echo -n "CURRENT DIRECTORY:"
-RUN pwd
-
 # install dependencies? 
+# - TODO 
 
-RUN echo "TESTING NEW SECOND BUILD"
-RUN ls -al
+RUN echo "TESTING NEW SECOND BUILD2"
+RUN ls -al /usr
 
 CMD [ "npm", "run", "second:build" ]
