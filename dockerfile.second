@@ -16,6 +16,6 @@ WORKDIR $DBUILDER_WORKDIR
 # dunno, shot in the dark
 COPY . .
 
-npm i -g http-server 
+RUN npm i -g http-server 
 
 CMD [ "http-server" ]
