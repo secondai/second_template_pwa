@@ -6,15 +6,15 @@ ENV NODE_ENV=${NODE_ENV}
 RUN apk update
 RUN apk --no-cache add bash python make g++
 
-ARG DBUILDER_WORKDIR
+#ARG DBUILDER_WORKDIR
 
-WORKDIR /srctesting
+#WORKDIR /srctesting
 
 # install dependencies? 
 # - TODO 
 
 # dunno, shot in the dark
-COPY . /srctesting
+#COPY . /srctesting
 
 RUN npm i -g http-server 
 
