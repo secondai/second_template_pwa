@@ -8,13 +8,13 @@ RUN apk --no-cache add bash python make g++
 
 ARG DBUILDER_WORKDIR
 
-WORKDIR $DBUILDER_WORKDIR
+WORKDIR /srctesting
 
 # install dependencies? 
 # - TODO 
 
 # dunno, shot in the dark
-COPY . .
+COPY . /srctesting
 
 RUN npm i -g http-server 
 
